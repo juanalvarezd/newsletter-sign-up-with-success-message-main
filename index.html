@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+</head>
+
+<body>
+  <main class="container">
+    <section class="sign-up">
+      <div class="sign-up__image"></div>
+      <article class="sign-up__info">
+        <h1 class="sign-up__title">Stay updated!</h1>
+        <p class="sign-up__text">Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul class="sign-up__list">
+          <li class="sign-up__list-item">Product discovery and building what matters</li>
+          <li class="sign-up__list-item">Measuring to ensure updates are a success</li>
+          <li class="sign-up__list-item">And much more!</li>
+        </ul>
+      </article>
+      <form action="#" class="sign-up__form form">
+        <div class="form__input">
+          <div class="form__label"><span class="form__label-title">Email address</span><span class="form__error-msj">Valid email required</span></div>
+        <input class="form__input-email" type="email" name="email" id="email"  pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9\-]+(\.[a-z0-9\-]+)*(\.[a-z]{2,15})$"  placeholder="email@company.com"  required>
+        </div>
+        <input type="submit" class="form__btn btn"
+          value="Subscribe to monthly newsletter">
+      </form>
+    </section>
+    <section class="success hidden">
+      <div class="succes__message-container">
+      <h2 class="success__title">Thanks for subscribing!</h2>
+      <p class="success__message">A confirmation email has been sent to <span class="text-bold">ash@loremcompany.com</span>.
+        Please open it and click the button inside to confirm your subscription.</p>
+      </div>
+      <button type="button" class="success__btn btn">Dismiss message</button>
+    </section>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
